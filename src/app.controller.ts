@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
   // @UseGuards(ThrottlerGuard)
   @Get()
-  @Throttle(5, 30)
+  @Throttle(2, 30)
   getHello(): string {
     return this.appService.getHello();
   }

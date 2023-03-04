@@ -15,8 +15,10 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Prueba de concepto WAF"', () => {
-      expect(appController.getHello()).toBe('Prueba de concepto WAF');
+    it('should return "Prueba de concepto de nestjs/throttler"', () => {
+      expect(appController.getHello()).toBe(
+        'Prueba de concepto de nestjs/throttler',
+      );
     });
   });
 });
